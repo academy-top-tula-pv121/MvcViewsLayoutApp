@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "About";
+    User user = new("Leopold", 35);
+    List<string> works = new() { "Shop", "Service", "Apteka" };
+}
+<h2>About page content</h2>
+<h3>Name: @user.Name, Age: @user.Age</h3>
+
+@await Html.PartialAsync("Works", works);
