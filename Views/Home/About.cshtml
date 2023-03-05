@@ -6,4 +6,8 @@
 <h2>About page content</h2>
 <h3>Name: @user.Name, Age: @user.Age</h3>
 
+@inject ITimeService timeService
+<h3>Current date: @timeService.Time</h3>
+
+
 @await Html.PartialAsync("Works", works);

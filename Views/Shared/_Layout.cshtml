@@ -6,14 +6,14 @@
 </head>
 <body>
     <h2>@ViewBag.Title</h2>
-    <div><a href="/Home/Index">Home page</a> | <a href="/Home/About">About page</a></div>
+    <div><a href="/Home/Index">Home page</a> | <a href="/Home/About">About page</a> | <a href="/Home/Login">Form page</a></div>
     <div>
         @RenderBody()
     </div>
     <footer>
         @if(IsSectionDefined("Footer"))
         {
-            @RenderSection("Footer", false);
+            @RenderSection("Footer", false)
         }
         else
         {
